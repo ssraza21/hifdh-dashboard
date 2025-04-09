@@ -308,7 +308,7 @@ const HifdhDashboard = () => {
                     <CardHeader className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
                       <CardTitle className="flex items-center">
                         <CalendarIcon className="h-5 w-5 mr-2" />
-                        Today's Hifdh Plan
+                        Todays Hifdh Plan
                       </CardTitle>
                       <CardDescription className="text-indigo-100">
                         {new Date().toLocaleDateString('en-US', {

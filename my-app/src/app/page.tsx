@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HifdhDashboard from "@/components/hifdh-dashboard";
 
 export default function Home() {
