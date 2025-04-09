@@ -699,8 +699,8 @@ const HifdhDashboard = () => {
                           <div
                             key={item.id}
                             className={`p-4 bg-white border rounded-lg shadow-sm hover:shadow-md transition-shadow ${new Date(item.nextReviewDate).toDateString() === new Date().toDateString()
-                                ? 'border-green-200 bg-green-50'
-                                : 'border-gray-200'
+                              ? 'border-green-200 bg-green-50'
+                              : 'border-gray-200'
                               }`}
                           >
                             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -807,11 +807,11 @@ const HifdhDashboard = () => {
                         <div
                           key={idx}
                           className={`aspect-square rounded ${idx < 1 ? 'bg-indigo-600' :
-                              idx < 2 ? 'bg-indigo-500' :
-                                idx < 5 ? 'bg-indigo-400' :
-                                  idx < 7 ? 'bg-indigo-300' :
-                                    idx < 10 ? 'bg-indigo-200' :
-                                      idx < 15 ? 'bg-indigo-100' : 'bg-gray-100'
+                            idx < 2 ? 'bg-indigo-500' :
+                              idx < 5 ? 'bg-indigo-400' :
+                                idx < 7 ? 'bg-indigo-300' :
+                                  idx < 10 ? 'bg-indigo-200' :
+                                    idx < 15 ? 'bg-indigo-100' : 'bg-gray-100'
                             }`}
                           title={`Juz ${Math.floor(idx / 6) + 1}, Section ${idx % 6 + 1}`}
                         />
@@ -848,16 +848,16 @@ const HifdhDashboard = () => {
                           <div
                             key={idx}
                             className={`aspect-square rounded ${activityLevel === 4 ? 'bg-green-600' :
-                                activityLevel === 3 ? 'bg-green-500' :
-                                  activityLevel === 2 ? 'bg-green-400' :
-                                    activityLevel === 1 ? 'bg-green-300' :
-                                      'bg-gray-100'
+                              activityLevel === 3 ? 'bg-green-500' :
+                                activityLevel === 2 ? 'bg-green-400' :
+                                  activityLevel === 1 ? 'bg-green-300' :
+                                    'bg-gray-100'
                               }`}
                             title={`${new Date(Date.now() - (28 - idx) * 86400000).toLocaleDateString()}: ${activityLevel === 0 ? 'No activity' :
-                                activityLevel === 1 ? 'Light activity' :
-                                  activityLevel === 2 ? 'Moderate activity' :
-                                    activityLevel === 3 ? 'High activity' :
-                                      'Very high activity'
+                              activityLevel === 1 ? 'Light activity' :
+                                activityLevel === 2 ? 'Moderate activity' :
+                                  activityLevel === 3 ? 'High activity' :
+                                    'Very high activity'
                               }`}
                           />
                         );
